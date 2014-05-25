@@ -1,0 +1,74 @@
+@charset 'UTF-8';
+
+body {
+	background-color: #FED;
+}
+
+h1 {
+	border: 1px solid #000;
+	font-size: 20px;
+	margin: 5px 5px;
+}
+
+h2 {
+	border: 1px solid #000;
+	font-size: 16px;
+	margin: 5px 5px;
+}
+
+li {
+	list-style-type: none;
+}
+
+.chart_area {
+	background-color: #FEA;
+	width: 640px;
+	margin: 5 auto;
+	overflow: hidden;
+}
+
+.chart_area h1 {
+	font-size: 14px;
+}
+
+.chart_area h2 {
+	font-size: 12px;
+}
+
+.clear {
+	clear: both;
+}
+
+#box_00,
+#box_01 {
+	margin: 0;
+	padding: 0;
+}
+
+#box_00 > li,
+#box_01 > li {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+#box_00 > li:nth-child(2),
+#box_01 > li:nth-child(2) {
+	border-left: 0;
+	background-color: #FFB6C1;
+}
+
+#box_00 > li:nth-child(2),
+#box_01 > li:nth-child(1) {
+	background-color: #B0C4DE;
+}
+#box_00 > li:nth-child(1),
+#box_01 > li:nth-child(2) {
+	background-color: #FFB6C1;
+}
+
+.account_title > li {
+	background-color: #00FA9A;
+	border: 1px solid #000;
+	float: left;
+}
