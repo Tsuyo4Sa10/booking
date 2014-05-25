@@ -7,14 +7,15 @@
   </head>
   <body>
 	<h1>勘定項目一覧</h1>
-	<h2>貸借対照表</h2>
-	<div class="chart_area">
-		<ul id="box_00">
-			<li>
-				<h1>借方</h1><!-- バックグラウンドに助けさせる -->
+	<hr>
+	<div id="balance_sheet", class="chart">
+		<h1>貸借対照表</h1>
+		<ul>
+			<li class="debit_side">
+				<h2>借方</h2><!-- バックグラウンドに助けさせる -->
 				<ul>
 					<li>
-						<h2>資産</h2>
+						<h3>資産</h3>
 						<ul class="account_title">
 							<li>現金</li>
 							<li>小口現金</li>
@@ -44,14 +45,15 @@
 							<li>貸付金</li>
 							<li>手形貸付金</li>
 						</ul>
+						<div class="clear"></div>
 					</li>
 				</ul>
 			</li>
-			<li>
-				<h1>貸方</h1><!-- バックグラウンドに助けさせる -->
+			<li class="credit_side">
+				<h2>貸方</h2><!-- バックグラウンドに助けさせる -->
 				<ul>
 					<li>
-						<h2>負債</h2>
+						<h3>負債</h3>
 						<ul class="account_title">
 							<li>当座借越</li>
 							<li>支払手形</li>
@@ -72,7 +74,7 @@
 						<div class="clear"></div>
 					</li>
 					<li>
-						<h2>純資産</h2>
+						<h3>純資産</h3>
 						<ul class="account_title">
 							<li>資本金</li>
 						</ul>
@@ -83,14 +85,15 @@
 		</ul>
 		<div class="clear"></div>
 	</div>	
-	<h2>損益計算書</h2>
-	<div class="chart_area">
-		<ul id="box_01">
-			<li>
-				<h1>借方</h1><!-- バックグラウンドに助けさせる -->
+	<hr>
+ 	<div id="pl_sheet", class="chart">
+		<h1>損益計算書</h1>
+		<ul>
+			<li class="debit_side">
+				<h2>借方</h2><!-- バックグラウンドに助けさせる -->
 				<ul>
 					<li>
-						<h2>費用</h2>
+						<h3>費用</h3>
 						<ul class="account_title">
 							<li>仕入</li>
 							<li>給料</li>
@@ -121,11 +124,11 @@
 					</li>
 				</ul>
 			</li>
-			<li>
-				<h1>貸方</h1><!-- バックグラウンドに助けさせる -->
+			<li class="credit_side">
+				<h2>貸方</h2><!-- バックグラウンドに助けさせる -->
 				<ul>
 					<li>
-						<h2>収益</h2>
+						<h3>収益</h3>
 						<ul class="account_title">
 							<li>売上</li>
 							<li>表品販売益</li>

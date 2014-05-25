@@ -5,9 +5,7 @@ body {
 }
 
 h1 {
-	border: 1px solid #000;
 	font-size: 20px;
-	margin: 5px 5px;
 }
 
 h2 {
@@ -16,54 +14,68 @@ h2 {
 	margin: 5px 5px;
 }
 
-li {
-	list-style-type: none;
-}
-
-.chart_area {
+.chart { 
 	background-color: #FEA;
-	width: 640px;
-	margin: 5 auto;
+	width: 640px;	/* 横幅固定 */
+	margin: 0 auto;	/* 縦無し、横自動 */
 	overflow: hidden;
 }
 
-.chart_area h1 {
+.chart h1 {
 	font-size: 14px;
+	text-align: left;
+	border: 0;
 }
 
-.chart_area h2 {
+.chart h2 {
 	font-size: 12px;
+	text-align: center;
+	border: 0;
+}
+
+.chart h3 {
+	font-size: 12px;
+	text-align: center;
+	border: 0;
+}
+
+.chart li {
+	list-style-type: none;
 }
 
 .clear {
 	clear: both;
 }
 
-#box_00,
-#box_01 {
+.chart ul { 
 	margin: 0;
 	padding: 0;
 }
 
-#box_00 > li,
-#box_01 > li {
+.chart > ul > li { 
 	float: left;
 	width: 50%;
 	height: 100%;
 }
 
-#box_00 > li:nth-child(2),
-#box_01 > li:nth-child(2) {
-	border-left: 0;
+.debit_side > ul > li ,
+.credit_side > ul > li { 
+	border: 14px solid #000;
+}
+
+#balance_sheet .debit_side { 
 	background-color: #FFB6C1;
 }
 
-#box_00 > li:nth-child(2),
-#box_01 > li:nth-child(1) {
+#balance_sheet .credit_side { 
 	background-color: #B0C4DE;
 }
-#box_00 > li:nth-child(1),
-#box_01 > li:nth-child(2) {
+
+#pl_sheet .debit_side { 
+	background-color: #B0C4DE;
+}
+
+#pl_sheet .credit_side { 
 	background-color: #FFB6C1;
 }
 
