@@ -19,6 +19,7 @@ h2 {
 	width: 640px;	/* 横幅固定 */
 	margin: 0 auto;	/* 縦無し、横自動 */
 	overflow: hidden;
+	border: 1px solid #000;
 }
 
 .chart h1 {
@@ -58,25 +59,43 @@ h2 {
 	height: 100%;
 }
 
+/*
 .debit_side > ul > li ,
 .credit_side > ul > li { 
 	border: 14px solid #000;
 }
+*/
 
 #balance_sheet .debit_side { 
-	background-color: #FFB6C1;
+	background-color: #FCF;
+}
+
+#balance_sheet .debit_side > ul > li { 
+	border: 14px solid #FFB6C1;
 }
 
 #balance_sheet .credit_side { 
-	background-color: #B0C4DE;
+	background-color: #9FF;
+}
+
+#balance_sheet .credit_side > ul > li { 
+	border: 14px solid #B0C4DE;
 }
 
 #pl_sheet .debit_side { 
-	background-color: #B0C4DE;
+	background-color: #9FF;
+}
+
+#pl_sheet .debit_side > ul > li { 
+	border: 14px solid #B0C4DE;
 }
 
 #pl_sheet .credit_side { 
-	background-color: #FFB6C1;
+	background-color: #FCF;
+}
+
+#pl_sheet .credit_side > ul > li { 
+	border: 14px solid #FFB6C1;
 }
 
 .account_title > li {
