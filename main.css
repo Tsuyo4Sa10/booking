@@ -34,9 +34,12 @@ h2 {
 }
 
 .chart h3 {
-	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 40px;
+	color: #FFF;
 	text-align: center;
-	border: 0;
+	font-family: "Alial Black";
 }
 
 .chart li {
@@ -81,33 +84,77 @@ h2 {
 #balance_sheet .debit_side > ul > li { 
 	border: 14px solid #FFB6C1;
 	border-radius: 18px;
+	min-height: 138px;	/* (50+0+14)*2+10 */
+}
+
+#balance_sheet .debit_side > ul > li:hover { 
+	border: 14px solid #000;
+}
+
+#balance_sheet .debit_side h3 {
+	line-height: 138px;
 }
 
 #balance_sheet .credit_side { 
 	background-color: #9FF;
 }
 
+#balance_sheet .credit_side h3 {
+	line-height: 50px;
+}
+
 #balance_sheet .credit_side > ul > li { 
 	border: 14px solid #B0C4DE;
 	border-radius: 18px;
+	min-height: 50px;
+}
+
+#balance_sheet .credit_side > ul > li:hover { 
+	border: 14px solid #000;
 }
 
 #pl_sheet .debit_side { 
 	background-color: #9FF;
 }
 
+#pl_sheet .debit_side h3 {
+	line-height: 138px;
+}
+
 #pl_sheet .debit_side > ul > li { 
 	border: 14px solid #B0C4DE;
 	border-radius: 18px;
+	min-height: 138px;	/* 貸借対照表に合わせた */
+}
+
+#pl_sheet .debit_side > ul > li:hover { 
+	border: 14px solid #000;
 }
 
 #pl_sheet .credit_side { 
 	background-color: #FCF;
 }
 
+#pl_sheet .credit_side h3 { 
+	line-height: 138px;
+}
+
 #pl_sheet .credit_side > ul > li { 
 	border: 14px solid #FFB6C1;
 	border-radius: 18px;
+	min-height: 138px;	/* 貸借対照表に合わせた */
+}
+
+#pl_sheet .credit_side > ul > li:hover { 
+	border: 14px solid #000;
+}
+
+#pl_sheet .credit_side > ul > li:hover ~ .account_title {
+  display: block;
+}
+
+.account_title {
+	display: none;
 }
 
 .account_title > li {
