@@ -16,7 +16,6 @@ h2 {
 
 .chart { 
 	background-color: #FEA;
-	width: 640px;	/* 横幅固定 */
 	margin: 0 auto;	/* 縦無し、横自動 */
 	overflow: hidden;
 	border: 1px solid #000;
@@ -53,18 +52,27 @@ h2 {
 	padding: 0;
 }
 
-.chart > ul > li { 
-	float: left;
-	width: 50%;
-	height: 100%;
+#balance_sheet,
+#pl_sheet { 
+	width: 640px;	/* 固定 */
+	/* height: 440px;	/* 固定 */
+	padding: 10px;
+	overflow: hidden;
 }
 
-/*
-.debit_side > ul > li ,
-.credit_side > ul > li { 
-	border: 14px solid #000;
+.debit_side,
+.credit_side {
+	float: left;
+	width: 300px;		/* 上位と自身のパディングを勘案した値
+							本当はパーセンテージで指定したい。 */
+	min-height: 380px;	/* 実測（観測）の結果で決定した値 */
+	padding: 10px;
 }
-*/
+
+.debit_side > ul > li,
+.credit_side > ul > li {
+	margin: 10px;
+}
 
 #balance_sheet .debit_side { 
 	background-color: #FCF;
@@ -72,6 +80,7 @@ h2 {
 
 #balance_sheet .debit_side > ul > li { 
 	border: 14px solid #FFB6C1;
+	border-radius: 18px;
 }
 
 #balance_sheet .credit_side { 
@@ -80,6 +89,7 @@ h2 {
 
 #balance_sheet .credit_side > ul > li { 
 	border: 14px solid #B0C4DE;
+	border-radius: 18px;
 }
 
 #pl_sheet .debit_side { 
@@ -88,6 +98,7 @@ h2 {
 
 #pl_sheet .debit_side > ul > li { 
 	border: 14px solid #B0C4DE;
+	border-radius: 18px;
 }
 
 #pl_sheet .credit_side { 
@@ -96,10 +107,14 @@ h2 {
 
 #pl_sheet .credit_side > ul > li { 
 	border: 14px solid #FFB6C1;
+	border-radius: 18px;
 }
 
 .account_title > li {
+	margin: 2px 4px;
 	background-color: #00FA9A;
-	border: 1px solid #000;
+	border: 4px solid #00FA9A;
+	border-radius: 18px;
 	float: left;
 }
+
