@@ -87,8 +87,12 @@ h2 {
 	min-height: 138px;	/* (50+0+14)*2+10 */
 }
 
-#balance_sheet .debit_side > ul > li:hover { 
-	border: 14px solid #000;
+#balance_sheet .debit_side > ul > li:hover .account_title {
+	display: block;
+}
+#balance_sheet .debit_side > ul > li:hover h3 {
+	font-size: 24px;
+	line-height: 50px;
 }
 
 #balance_sheet .debit_side h3 {
@@ -109,8 +113,12 @@ h2 {
 	min-height: 50px;
 }
 
-#balance_sheet .credit_side > ul > li:hover { 
-	border: 14px solid #000;
+#balance_sheet .credit_side > ul > li:hover .account_title {
+	display: block;
+}
+#balance_sheet .credit_side > ul > li:hover h3 {
+	font-size: 24px;
+	line-height: 50px;
 }
 
 #pl_sheet .debit_side { 
@@ -127,8 +135,12 @@ h2 {
 	min-height: 138px;	/* 貸借対照表に合わせた */
 }
 
-#pl_sheet .debit_side > ul > li:hover { 
-	border: 14px solid #000;
+#pl_sheet .debit_side > ul > li:hover .account_title {
+	display: block;
+}
+#pl_sheet .debit_side > ul > li:hover h3 {
+	font-size: 24px;
+	line-height: 50px;
 }
 
 #pl_sheet .credit_side { 
@@ -145,12 +157,12 @@ h2 {
 	min-height: 138px;	/* 貸借対照表に合わせた */
 }
 
-#pl_sheet .credit_side > ul > li:hover { 
-	border: 14px solid #000;
+#pl_sheet .credit_side > ul > li:hover .account_title {
+	display: block;
 }
-
-#pl_sheet .credit_side > ul > li:hover ~ .account_title {
-  display: block;
+#pl_sheet .credit_side > ul > li:hover h3 {
+	font-size: 24px;
+	line-height: 50px;
 }
 
 .account_title {
