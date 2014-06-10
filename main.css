@@ -68,7 +68,11 @@ h2 {
 	float: left;
 	width: 300px;		/* 上位と自身のパディングを勘案した値
 							本当はパーセンテージで指定したい。 */
-	min-height: 380px;	/* 実測（観測）の結果で決定した値 */
+/*
+	min-height: 250px;
+	max-height: 250px;
+*/
+	height: 400px;		/* 高さを固定 */
 	padding: 10px;
 }
 
@@ -90,6 +94,7 @@ h2 {
 #balance_sheet .debit_side > ul > li:hover .account_title {
 	display: block;
 }
+
 #balance_sheet .debit_side > ul > li:hover h3 {
 	font-size: 24px;
 	line-height: 50px;
@@ -116,6 +121,7 @@ h2 {
 #balance_sheet .credit_side > ul > li:hover .account_title {
 	display: block;
 }
+
 #balance_sheet .credit_side > ul > li:hover h3 {
 	font-size: 24px;
 	line-height: 50px;
@@ -138,6 +144,7 @@ h2 {
 #pl_sheet .debit_side > ul > li:hover .account_title {
 	display: block;
 }
+
 #pl_sheet .debit_side > ul > li:hover h3 {
 	font-size: 24px;
 	line-height: 50px;
@@ -160,6 +167,7 @@ h2 {
 #pl_sheet .credit_side > ul > li:hover .account_title {
 	display: block;
 }
+
 #pl_sheet .credit_side > ul > li:hover h3 {
 	font-size: 24px;
 	line-height: 50px;
@@ -167,6 +175,10 @@ h2 {
 
 .account_title {
 	display: none;
+/*
+	position: absolute;
+	width: 300px;
+*/
 }
 
 .account_title > li {
