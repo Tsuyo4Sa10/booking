@@ -35,6 +35,8 @@ h2 {
 }
 
 .chart h2 {
+	padding: 0px;
+	margin: 0px;
 	font-size: 12px;
 	text-align: center;
 	border: 0;
@@ -76,60 +78,57 @@ h2 {
 	margin: 10px 0px;
 }
 
-#balance_sheet .debit_side { 
-	background-color: #FCF;
-}
-
-#balance_sheet .debit_side > ul > li { 
-	border: 14px solid #FFB6C1;
+/* 枠線指定 */
+.account_group {
+	border-style: solid;
+	border-width: 14px;
 	border-radius: 18px;
-	min-height: 138px;	/* (50+0+14)*2+10 */
 }
 
-#balance_sheet .debit_side h3 {
-	line-height: 138px;
+#balance_sheet .debit_side .account_group,
+#pl_sheet .debit_side .account_group,
+#pl_sheet .credit_side .account_group { 
+	min-height: 296px;	/* 346 - (12) - (10 + (14*2)) */
+}
+#balance_sheet .credit_side .account_group { 
+	min-height: 129px;	/* (346 - (12) - ((10 + (14*2)) * 2)) / 2 */
 }
 
-#balance_sheet .credit_side { 
-	background-color: #9FF;
+#balance_sheet .debit_side .account_group h3,
+#pl_sheet .debit_side .account_group h3,
+#pl_sheet .credit_side .account_group h3 { 
+	line-height: 296px;	/* .account_group の高さに従う */
 }
 
-#balance_sheet .credit_side h3 {
-	line-height: 50px;
+#balance_sheet .credit_side .account_group h3 {
+	line-height: 129px;	/* .account_group の高さに従う */
 }
 
-#balance_sheet .credit_side > ul > li { 
-	border: 14px solid #B0C4DE;
-	border-radius: 18px;
-	min-height: 50px;
-}
-
-#pl_sheet .debit_side { 
-	background-color: #9FF;
-}
-
-#pl_sheet .debit_side h3 {
-	line-height: 138px;
-}
-
-#pl_sheet .debit_side > ul > li { 
-	border: 14px solid #B0C4DE;
-	border-radius: 18px;
-	min-height: 138px;	/* 貸借対照表に合わせた */
-}
-
+/* 色指定 */
+#balance_sheet .debit_side,
 #pl_sheet .credit_side { 
 	background-color: #FCF;
 }
 
-#pl_sheet .credit_side h3 { 
-	line-height: 138px;
+#balance_sheet .credit_side,
+#pl_sheet .debit_side { 
+	background-color: #9FF;
 }
 
+#balance_sheet .debit_side > ul > li { 
+	border-color: #FFB6C1;
+}
+#balance_sheet .debit_side > ul > li { 
+	border-color: #FFB6C1;
+}
+#balance_sheet .credit_side > ul > li { 
+	border-color: #B0C4DE;
+}
+#pl_sheet .debit_side > ul > li { 
+	border-color: #B0C4DE;
+}
 #pl_sheet .credit_side > ul > li { 
-	border: 14px solid #FFB6C1;
-	border-radius: 18px;
-	min-height: 138px;	/* 貸借対照表に合わせた */
+	border-color: #FFB6C1;
 }
 
 .account_title {
