@@ -67,8 +67,10 @@ h2 {
 .debit_side,
 .credit_side {
 	padding: 10px;
-	width: 300px;	/* ((640 - (10*2)) - (10*2)) / 2 */
-	height: 346px;	/* 400 - ((9+1)*2) - ((10*2) + 14) */
+	/* ((640 - (10*2)) - (10*2)) / 2 */
+	width: 300px;
+	/* 400 - ((9+1)*2) - ((10*2) + 14) */
+	height: 346px;
 
 	float: left;
 	overflow: hidden;
@@ -88,20 +90,34 @@ h2 {
 #balance_sheet .debit_side .account_group,
 #pl_sheet .debit_side .account_group,
 #pl_sheet .credit_side .account_group { 
-	min-height: 296px;	/* 346 - (12) - (10 + (14*2)) */
+	/* 346 - (12) - (10 + (14*2)) */
+	min-height: 296px;
 }
 #balance_sheet .credit_side .account_group { 
-	min-height: 129px;	/* (346 - (12) - ((10 + (14*2)) * 2)) / 2 */
+	/* (346 - (12) - ((10 + (14*2)) * 2)) / 2 */
+	min-height: 129px;
 }
 
 #balance_sheet .debit_side .account_group h3,
 #pl_sheet .debit_side .account_group h3,
 #pl_sheet .credit_side .account_group h3 { 
-	line-height: 296px;	/* .account_group の高さに従う */
+	/* .account_group の高さに従う */
+	position: relative;
+/*
+	z-index: 1
+*/
+	/* (296 - 40) / 2 */
+	top: 128px; 
 }
 
 #balance_sheet .credit_side .account_group h3 {
-	line-height: 129px;	/* .account_group の高さに従う */
+	/* .account_group の高さに従う */
+	position: relative;
+/*
+	z-index: 1
+*/
+	/* (129 - 40) / 2 */
+	top: 44px; 
 }
 
 /* 色指定 */
@@ -133,10 +149,9 @@ h2 {
 
 .account_title {
 	display: none;
-/*
-	position: absolute;
-	width: 300px;
-*/
+	position: relative;
+	z-index: 2;
+	top: 0px; 
 }
 
 .account_title > li {
@@ -149,10 +164,5 @@ h2 {
 
 .account_group:hover .account_title {
 	display: block;
-}
-
-.account_group:hover h3 {
-	font-size: 24px;
-	line-height: 50px;
 }
 
