@@ -88,37 +88,43 @@ h2 {
 	position: relative;
 }
 
-#balance_sheet .debit_side .account_group,
-#pl_sheet .debit_side .account_group,
-#pl_sheet .credit_side .account_group { 
+
+#shisan,
+#hiyo,
+#shyueki { 
 	/* 346 - (12) - (10 + (14*2)) */
 	min-height: 296px;
 }
-#balance_sheet .credit_side .account_group { 
-	/* (346 - (12) - ((10 + (14*2)) * 2)) / 2 */
-	min-height: 129px;
+
+#fusai {
+	/* (346 - (12) - ((10 + (14*2)) * 2)) * (2/3) */
+	min-height: 172px;
 }
 
-#balance_sheet .debit_side .account_group h3,
-#pl_sheet .debit_side .account_group h3,
-#pl_sheet .credit_side .account_group h3 { 
-	/* .account_group の高さに従う */
+#jyunshisan { 
+	/* (346 - (12) - ((10 + (14*2)) * 2)) * (1/3) */
+	min-height: 86px;
+}
+
+
+#shisan h3,
+#hiyo h3,
+#shyueki h3 { 
 	position: relative;
-/*
-	z-index: 1
-*/
 	/* (296 - 40) / 2 */
 	top: 128px; 
 }
 
-#balance_sheet .credit_side .account_group h3 {
-	/* .account_group の高さに従う */
+#fusai h3 {
 	position: relative;
-/*
-	z-index: 1
-*/
-	/* (129 - 40) / 2 */
-	top: 44px; 
+	/* (172 - 40) / 2 */
+	top: 66px; 
+}
+
+#jyunshisan h3 { 
+	position: relative;
+	/* (86 - 40) / 2 */
+	top: 23px; 
 }
 
 /* 色指定 */
@@ -132,25 +138,17 @@ h2 {
 	background-color: #9FF;
 }
 
-#balance_sheet .debit_side > ul > li { 
+#shisan,
+#shyueki { 
 	border-color: #FFB6C1;
 	background-color: #FFB6C1;
 }
-#balance_sheet .debit_side > ul > li { 
-	border-color: #FFB6C1;
-	background-color: #FFB6C1;
-}
-#balance_sheet .credit_side > ul > li { 
+
+#hiyo,
+#fusai,
+#jyunshisan { 
 	border-color: #B0C4DE;
 	background-color: #B0C4DE;
-}
-#pl_sheet .debit_side > ul > li { 
-	border-color: #B0C4DE;
-	background-color: #B0C4DE;
-}
-#pl_sheet .credit_side > ul > li { 
-	border-color: #FFB6C1;
-	background-color: #FFB6C1;
 }
 
 .account_titles {
@@ -172,14 +170,14 @@ h2 {
 	display: block;
 }
 
-#balance_sheet .debit_side > ul > li:hover,
-#balance_sheet .debit_side > ul > li:hover,
-#pl_sheet .credit_side > ul > li:hover { 
-	background-color: #FCF;
+#hiyo:hover,
+#fusai:hover,
+#jyunshisan:hover { 
+	background-color: #9FF;
 }
 
-#balance_sheet .credit_side > ul > li:hover,
-#pl_sheet .debit_side > ul > li:hover {
-	background-color: #9FF;
+#shisan:hover,
+#shyueki:hover { 
+	background-color: #FCF;
 }
 
