@@ -16,7 +16,7 @@ h2 {
 
 .chart { 
 	width: 640px;	/* 固定 */
-	height: 360px;	/* 固定 */
+	min-height: 360px;	/* 固定 */
 	margin: 0 auto;	/* 縦無し、横自動 */
 	border: 1px solid #000;
 	padding: 9px;
