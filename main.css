@@ -49,6 +49,7 @@ h2 {
 	color: #FFF;
 	text-align: center;
 	font-family: "Alial Black";
+	font-weight: lighter;
 }
 
 .chart ul { 
@@ -164,6 +165,7 @@ h2 {
 	border: 4px solid #00FA9A;
 	border-radius: 18px;
 	float: left;
+	opacity: 0.5;
 }
 
 .account_group:hover .account_titles {
@@ -179,5 +181,10 @@ h2 {
 #shisan:hover,
 #shyueki:hover { 
 	background-color: #FCF;
+}
+
+.account_titles > li:hover {
+	opacity: 1.0;
+	font-weight: bolder;
 }
 
